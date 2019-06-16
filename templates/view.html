@@ -1,0 +1,91 @@
+<html>
+   <head>
+      <title>EMOJIFY</title>
+      <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/dropdown.js') }}"></script>
+      <!-- <link rel="stylesheet" href="/static/css/form.css"> -->
+      <link rel="stylesheet" href="/static/css/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <br>
+         <center>
+            <h2>Emojify - Text to Emoji Converter</h2>
+         </center>
+      </div>
+      <center>
+         <p> Enter some text to generate emoji under the following classes </p>
+      </center>
+      <center>
+         <ul class="list-group">
+            <li class="list-group-item list-item-mine">Happy</li>
+            <li class="list-group-item list-item-mine">Fear</li>
+            <li class="list-group-item list-item-mine">Anger</li>
+            <li class="list-group-item list-item-mine">Sadness</li>
+            <li class="list-group-item list-item-mine">Disgust</li>
+            <li class="list-group-item list-item-mine">Shame</li>
+            <li class="list-group-item list-item-mine">Guilt</li>
+         </ul>
+      </center>
+      <div class=container">
+         <br>
+         <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+               <form class="form-inline">
+                  <div class="form-group">
+                     <label for="name-field" class="label-class">Enter the text</label>
+                     <input type="text" class="form-control" id="name-field" name="name" placeholder="Example: I am happy today">
+                     <br>
+                  </div>
+                  <br>                             
+                  <div class="submit-div">
+                     <center>
+                        <button type="submit" id="submit-btn">Submit</button>
+                     </center>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+               </form>
+               <div class="emoji-text">
+                  <center>
+                     <p id="greeting"></p>
+                  </center>
+               </div>
+
+                  <center>
+                      <h6>Select the option from the dropdown below if the response for the above text needs to be updated.</h6>
+                  </center>
+
+               <div class="dropdown">
+                  <select class="dropdown-val">
+                     <option value="Happy">Happy</option>
+                     <option value="Fear">Fear</option>
+                     <option value="Anger">Anger</option>
+                     <option value="Sadness">Sadness</option>
+                     <option value="Disgust">Disgust</option>
+                     <option value="Shame">Shame</option>
+                     <option value="Guilt">Guilt</option>
+                  </select>
+               </div>
+               <div class="update-div">
+                  <center>
+                     <button type="button" id="update-btn">Update Values</button>
+                  </center>
+               </div>
+               <div class="updated-labels">
+                  <center>
+                     <p id="update-class"></p>
+                  </center>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

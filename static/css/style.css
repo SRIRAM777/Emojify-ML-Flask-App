@@ -1,0 +1,51 @@
+body {
+	background-image:url('bg4.jpg');
+ }
+label{
+  display: flex;
+  padding: 20px;
+}
+.label-class{
+	margin-left: -200px;
+	font-weight: bold;
+}
+
+.list-item-mine{
+  background-image: url('bg4.jpg');
+  font-weight: bold;
+}
+
+#name-field{
+	width: 50em;
+	color: black;
+}
+.submit-div{
+  padding: 1em;
+  margin-left: -70px;
+}
+
+p#greeting{
+ 	margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 40px;
+ }
+
+.submit-div{
+ 	display: block;
+    padding: 10px;
+ }
+
+ .update-div {
+    display: block;
+    margin-left: -29em;
+    padding: 20px;
+}
+ .dropdown{
+ 	margin-left: -4.0em;
+ }
+
+ #update-class{
+ 	margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 20px;
+ }
