@@ -1,0 +1,12 @@
+Flask==1.0.2
+Keras==2.2.4
+Keras-Applications==1.0.6
+Keras-Preprocessing==1.0.5
+numpy==1.16.2
+pandas==0.23.0
+tensorflow==1.9.0
+scikit-learn==0.20.2
+pickleshare==0.7.4
+ipdb==0.11
+jsonpickle==1.1
+cloudpickle==0.6.1
