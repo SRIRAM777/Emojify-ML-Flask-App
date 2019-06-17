@@ -19,7 +19,6 @@ def get_model():
 	model = load_model('emoji_model.h5')
 	print('Model Loaded!!')
 
-get_model()
 graph = tf.get_default_graph()
 
 tokenizer = pickle.load(open('tokenizer.pickle','rb'))
@@ -74,6 +73,10 @@ def update():
 		'update_text': 'Updated the values!! Should work in next few attempts..'
 		}
 	return jsonify(response)
+
+if __name__ == "__main__":
+	get_model()
+	app.run(host="0.0.0.0", port=5000,debug=True)
 		
 
 
