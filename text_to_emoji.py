@@ -76,7 +76,12 @@ def read_glove_vector(glove_file):
 			line[0] = re.sub('[^a-zA-Z]', '', line[0])
 			if len(line[0]) > 0:
 				words.add(line[0])
-				word_to_vec[line[0]] = np.array(line[1:],dtype=np.float64)
+				try:
+					word_to_vec[line[0]] = np.array(line[1:],dtype=np.float64)
+				except:
+					print('Error has occured')
+					print('-'*50)
+					print(line[1:])
 
 		i = 1
 		word_to_index = {}
